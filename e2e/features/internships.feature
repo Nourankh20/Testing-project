@@ -9,5 +9,5 @@ Feature: Internships
 
     Examples:
         | string | number |
-        | Google | 1 |
+        | Teralytics | 2 |
         |  | 30 |
