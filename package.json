@@ -22,6 +22,7 @@
     "cucumber": "^7.0.0-rc.0"
   },
   "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1",
     "cypress": "^9.2.0"
   }
 }
