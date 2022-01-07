@@ -1,0 +1,25 @@
+{
+  "name": "testing-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nourankh20/Testing-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nourankh20/Testing-project/issues"
+  },
+  "homepage": "https://github.com/Nourankh20/Testing-project#readme",
+  "dependencies": {
+    "cucumber": "^7.0.0-rc.0"
+  },
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  }
+}
