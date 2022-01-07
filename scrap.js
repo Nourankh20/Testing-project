@@ -9,16 +9,19 @@ const getInternships = (companyName) => {
       .then((response) => response.data)
       .then((html) => {
         const $ = cheerio.load(html);
-        const internships = $("ul > li > a > span");
+        const internships = $("article > div > ul > li > div > a");
   
         const parsedInternships = [];
         for (let internship of internships) {
             parsedInternships.push(internship.text);
         }
+        console.log(internships);
+
         return companyName
           ? parsedInternships.filter(
               (internship) =>
-                internship.toLocaleLowerCase().includes(companyName.toLocaleLowerCase())
+                internship.toLocaleLowerCase() ===
+                companyName.toLocaleLowerCase()
             )
           : parsedInternships;
       })
