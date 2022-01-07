@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/Nourankh20/Testing-project#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
-    "cucumber": "^7.0.0-rc.0"
+    "cucumber": "^7.0.0-rc.0",
+    "jest": "^27.4.7"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",

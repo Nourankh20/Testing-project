@@ -12,5 +12,5 @@ describe('Internships test', () => {
     it('verifies the text of the first menu link item', () => {
       cy.get('[class= "p-0 m-0  HeaderStyleslist HeaderStylesmenu "]').find('li').first().should('have.text', 'Jobs');
     });
-    
+  
   });

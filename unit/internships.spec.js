@@ -8,7 +8,9 @@ beforeEach(() => {
 
 describe("Test Internships API", () => {
   test("Test Get Internships", async () => {
-    const results = await getInternships("Google");
+    const results = await getInternships("Teralytics");
     expect(results).toEqual(mockInternshipsApiStub);
   });
 });
+
+
