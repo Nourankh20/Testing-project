@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "cy:run": "cypress run"
   },
   "repository": {
@@ -18,12 +18,11 @@
   },
   "homepage": "https://github.com/Nourankh20/Testing-project#readme",
   "dependencies": {
-    "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
     "cucumber": "^7.0.0-rc.0"
   },
   "devDependencies": {
-    "cypress": "^9.2.0",
-    "jest": "^27.4.7"
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cypress": "^9.2.0"
   }
 }
