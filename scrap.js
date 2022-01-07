@@ -15,13 +15,12 @@ const getInternships = (companyName) => {
         for (let internship of internships) {
             parsedInternships.push(internship.text);
         }
-        // return firstCharacter
-        //   ? parsedPresidents.filter(
-        //       (president) =>
-        //         president.charAt(0).toLocaleLowerCase() ===
-        //         firstCharacter.toLocaleLowerCase()
-        //     )
-        //   : parsedPresidents;
+        return companyName
+          ? parsedInternships.filter(
+              (internship) =>
+                internship.toLocaleLowerCase().includes(companyName.toLocaleLowerCase())
+            )
+          : parsedInternships;
       })
       .catch(console.error);
   };
