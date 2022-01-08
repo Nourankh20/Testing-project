@@ -36,7 +36,7 @@ app.listen(3000, async (req, res) => {
 //     });
 //   }
 app.get("/scrap", async (req, res) => {
-    const data = await getInternships();
+    const data = await getInternships(req.query.char);
     if (data && data.length) {
       const db = await mongoClient('glassdoor');
       if (!db) {
@@ -46,6 +46,6 @@ app.get("/scrap", async (req, res) => {
         console.error(err);
       });
     }
-    res.json(data);
+    return res.status(200).json(data);
   })
 });

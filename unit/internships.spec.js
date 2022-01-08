@@ -1,5 +1,6 @@
 const mockInternshipsApiStub = require("./internships.api.stub.json");
 const { getInternships } = require("../scrap");
+const { mongoClient } = require('../db.js');
 
 beforeEach(() => {
   jest.clearAllMocks();
@@ -11,6 +12,17 @@ describe("Test Internships API", () => {
     const results = await getInternships("Teralytics");
     expect(results).toEqual(mockInternshipsApiStub);
   });
+
+  test("Test data aggregate get method", async () => {
+    const connectSpy = jest.spyOn(mongoClient, 'connect').mockReturnValueOnce({});
+      const actual = await Common.connect('mongodb://localhost:27017');
+      expect(actual).toEqual({});
+      expect(connectSpy).toBeCalledWith('mongodb://localhost:27017', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      
+  });
+}
+);
+
 });
-
-

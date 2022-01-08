@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cy:run": "cypress run"
+    "cy:run": "cypress run",
+    "start": "nodemon app.js",
+    "test:e2e": "cucumber-js -f json:cucumber.json e2e/features/ -r e2e/steps/ --parallel 3",
+    "test:unit": "jest"
   },
   "repository": {
     "type": "git",
@@ -21,7 +24,9 @@
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
     "cucumber": "^7.0.0-rc.0",
-    "jest": "^27.4.7"
+    "express": "^4.17.2",
+    "jest": "^27.4.7",
+    "mongodb": "^4.3.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",
