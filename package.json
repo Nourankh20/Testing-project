@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^8.0.0-rc.1",
+    "cy:run": "cypress run",
     "cypress": "^9.2.0",
     "eslint-plugin-cypress": "^2.12.1"
   }

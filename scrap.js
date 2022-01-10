@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 
 
 const getInternships = (companyName) => {
-  //  companyName = companyName+" Logo"; 
+   companyName = companyName+" Logo"; 
     return axios
       .get(
         "https://www.glassdoor.com/Job/berlin-software-engineer-internship-jobs-SRCH_IL.0,6_IC2622109_KO7,35.htm"
@@ -33,7 +33,7 @@ const getInternships = (companyName) => {
         console.log(parsedInternships.length);
         //console.log(output);
 
-        return  parsedInternships;    
+        return  output;    
 
       })
       .catch(console.error);

@@ -8,6 +8,6 @@ Feature: Internships
 
 
     Examples:
-        | String | number |
-        | Teralytics | 24 |
-        |  | 24 |
+        | String     | number |
+        | Teralytics | 2      |
+        |            | 24     |
