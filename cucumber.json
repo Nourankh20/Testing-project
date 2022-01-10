@@ -1,0 +1,228 @@
+[
+  {
+    "description": "    Manages Internships information.",
+    "elements": [
+      {
+        "description": "",
+        "id": "internships;gets-the-list-of-internships",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of internships",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a string Teralytics",
+            "match": {
+              "location": "e2e\\steps\\internships.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5857999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch internships",
+            "match": {
+              "location": "e2e\\steps\\internships.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 33717799,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 2 of internships",
+            "match": {
+              "location": "e2e\\steps\\internships.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internships;gets-the-list-of-internships",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of internships",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a string ",
+            "match": {
+              "location": "e2e\\steps\\internships.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7685999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch internships",
+            "match": {
+              "location": "e2e\\steps\\internships.js:9"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 31491899,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 30 of internships",
+            "match": {
+              "location": "e2e\\steps\\internships.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "internships",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Internships",
+    "tags": [],
+    "uri": "e2e\\features\\internships.feature"
+  },
+  {
+    "description": "    Manages Jobs information.",
+    "elements": [
+      {
+        "description": "",
+        "id": "jobs;gets-the-list-of-jobs-based-on-companyname",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of jobs based on companyName",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a company <string>",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5014324299,
+              "error_message": "Error: function timed out, ensure the callback is executed within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Coding\\Visual Studio Code\\VS Projects\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:60:20)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get Software Developers Needed! with Security Clearance of jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "jobs;gets-the-list-of-jobs-based-on-companyname",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of jobs based on companyName",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a company <string>",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:5"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5020401800,
+              "error_message": "Error: function timed out, ensure the callback is executed within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Coding\\Visual Studio Code\\VS Projects\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:60:20)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:9"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get Software Engineer IV of jobs",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:17"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "jobs",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Jobs",
+    "tags": [],
+    "uri": "e2e\\features\\jobs.feature"
+  }
+]
