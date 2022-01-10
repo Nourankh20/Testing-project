@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13294799
+              "duration": 10777600
             }
           },
           {
@@ -32,8 +32,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 52265599,
-              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
+              "duration": 27594099,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
             }
           },
           {
@@ -81,7 +81,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 18284500
+              "duration": 6559599
             }
           },
           {
@@ -94,8 +94,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 43109699,
-              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
+              "duration": 30543599,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
             }
           },
           {
@@ -132,7 +132,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 13496500
+              "duration": 6034700
             }
           },
           {
@@ -145,8 +145,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 43180500,
-              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
+              "duration": 28057299,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
             }
           },
           {
@@ -189,9 +189,12 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a string \"Software Engineering Services\"",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:5"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 9791200
             }
           },
           {
@@ -203,8 +206,9 @@
               "location": "e2e\\steps\\jobs.js:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 32191598.999999996,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
             }
           },
           {
@@ -236,9 +240,12 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a string \"Software Galaxy Systems, LLC\"",
+            "match": {
+              "location": "e2e\\steps\\jobs.js:5"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 2506100
             }
           },
           {
@@ -250,8 +257,9 @@
               "location": "e2e\\steps\\jobs.js:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 2365200,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
             }
           },
           {
@@ -278,5 +286,67 @@
     "name": "Jobs",
     "tags": [],
     "uri": "e2e\\features\\jobs.feature"
+  },
+  {
+    "description": "     Mange job that have internship in names ",
+    "elements": [
+      {
+        "description": "",
+        "id": "jobstype;gets-the-list-of-jobstype",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of jobsType",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a type \"Intern\"",
+            "match": {
+              "location": "e2e\\steps\\jobTypes.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3180699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch jobsType",
+            "match": {
+              "location": "e2e\\steps\\jobTypes.js:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3374699,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1159:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 14 of jobsType",
+            "match": {
+              "location": "e2e\\steps\\jobTypes.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "jobstype",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "jobsType",
+    "tags": [],
+    "uri": "e2e\\features\\jobsType.feature"
   }
 ]

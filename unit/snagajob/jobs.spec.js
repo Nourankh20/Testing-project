@@ -1,7 +1,7 @@
 const mockJobsApiStub = require("./jobs.api.stub.json");
 const {
   getJobs
-} = require("../scrapNew");
+} = require("../../scrapNew");
 
 
 beforeEach(() => {
