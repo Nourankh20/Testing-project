@@ -1,5 +1,67 @@
 [
   {
+    "description": "    Manages companies information.",
+    "elements": [
+      {
+        "description": "",
+        "id": "companies;gets-the-list-of-companies",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of companies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a location '6th of October, Giza, Egypt '",
+            "match": {
+              "location": "e2e\\steps\\companies.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13294799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch companies",
+            "match": {
+              "location": "e2e\\steps\\companies.js:10"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 52265599,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 3 of companies",
+            "match": {
+              "location": "e2e\\steps\\companies.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "companies",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "companies",
+    "tags": [],
+    "uri": "e2e\\features\\companies.feature"
+  },
+  {
     "description": "    Manages Internships information.",
     "elements": [
       {
@@ -19,7 +81,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 11132899
+              "duration": 18284500
             }
           },
           {
@@ -31,21 +93,22 @@
               "location": "e2e\\steps\\internships.js:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 1708636000
+              "status": "failed",
+              "duration": 43109699,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get 24 of internships",
+            "name": "I should get 2 of internships",
             "match": {
               "location": "e2e\\steps\\internships.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 3563099
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -69,7 +132,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 12638099
+              "duration": 13496500
             }
           },
           {
@@ -81,8 +144,9 @@
               "location": "e2e\\steps\\internships.js:9"
             },
             "result": {
-              "status": "passed",
-              "duration": 1387593700
+              "status": "failed",
+              "duration": 43180500,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)"
             }
           },
           {
@@ -94,8 +158,8 @@
               "location": "e2e\\steps\\internships.js:15"
             },
             "result": {
-              "status": "passed",
-              "duration": 6336899
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -125,12 +189,9 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a string \"Software Engineering Services\"",
-            "match": {
-              "location": "e2e\\steps\\jobs.js:5"
-            },
             "result": {
-              "status": "passed",
-              "duration": 17350199
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -142,9 +203,8 @@
               "location": "e2e\\steps\\jobs.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 5046747800,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:60:20)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -176,12 +236,9 @@
             "keyword": "Given ",
             "line": 5,
             "name": "a string \"Software Galaxy Systems, LLC\"",
-            "match": {
-              "location": "e2e\\steps\\jobs.js:5"
-            },
             "result": {
-              "status": "passed",
-              "duration": 16412699
+              "status": "ambiguous",
+              "duration": 0
             }
           },
           {
@@ -193,9 +250,8 @@
               "location": "e2e\\steps\\jobs.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 5041327800,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\time.js:60:20)\n    at listOnTimeout (internal/timers.js:557:17)\n    at processTimers (internal/timers.js:500:7)"
+              "status": "skipped",
+              "duration": 0
             }
           },
           {

@@ -3,7 +3,7 @@ const express = require('express');
 const axios = require('axios');
 const {
     mongoClient
-} = require('./dataAgg');
+} = require('./db');
 const PORT = 3000;
 const app = express();
 
