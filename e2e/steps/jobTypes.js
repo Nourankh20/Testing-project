@@ -2,7 +2,7 @@ const { Given, When, Then } = require("@cucumber/cucumber");
 const assert = require("assert").strict;
 const axios = require("axios");
 
-Given("a string {string}", function (jobType) {
+Given("a type {string}", function (jobType) {
     this.context["jobType"] = jobType;
     console.log(jobType)
   });

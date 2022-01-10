@@ -8,6 +8,6 @@ Feature: Jobs
 
 
     Examples:
-        | string | {} |
+        | string                          | {} |
         | "Software Engineering Services" | Software Developers Needed! with Security Clearance |
-        | "Software Galaxy Systems, LLC" | Software Engineer IV |
+        | "Software Galaxy Systems, LLC"  | Software Engineer IV                                |
