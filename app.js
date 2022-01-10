@@ -5,6 +5,7 @@ const { mongoClient } = require("./db.js");
 const bodyParser = require("body-parser");
 const { getInternships } = require("./scrap");
 const { getCompJobs } = require("./scrap1");
+const { getJobs } = require("./scrapNew");
 const { getJobType } = require("./scrap2");
 app.use(bodyParser.json());
 
