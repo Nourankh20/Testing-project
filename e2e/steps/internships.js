@@ -13,5 +13,8 @@ this.context["response"] = data
 });
 
 Then("I should get {int} of internships", function (expectedResponse) {
+  console.log("you can't see me"+this.context["response"].length);
+  console.log("my time is now"+expectedResponse);
+
   assert.equal(this.context["response"].length, expectedResponse);
 });
