@@ -1,6 +1,6 @@
 const mockCompaniesApiStub = require("./companies.api.stub.json");
 const { getCompJobs} = require("../scrap1");
-const {getJobType }=require("../scrap2")
+const {getJobType }=require("../scrap1")
 const mockJobsApiStub = require("./jobsType.api.stub.json");
 
 beforeEach(() => {
