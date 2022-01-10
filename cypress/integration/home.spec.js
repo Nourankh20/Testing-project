@@ -9,8 +9,10 @@ describe('Internships test', () => {
       cy.get('[class="css-1buaf54 pr-xxsm job-search-key-iii9i8 e1rrn5ka4"]').first().should('have.text', 'Berlin');
     });
 
+
+
     it('verifies the text of the first menu link item', () => {
-      cy.get('[class= "p-0 m-0  HeaderStyleslist HeaderStylesmenu "]').find('li').first().should('have.text', 'Jobs');
+      cy.get('[data-test ="site-header-jobs"]').first().should('have.text', 'Jobs');
     });
   
   });
