@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8842800
+              "duration": 11065299
             }
           },
           {
@@ -32,7 +32,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 34557599,
+              "duration": 47542400,
               "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
             }
           },
@@ -70,7 +70,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10241699
+              "duration": 13543999
             }
           },
           {
@@ -83,7 +83,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 24354500,
+              "duration": 41720700,
               "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
             }
           },
