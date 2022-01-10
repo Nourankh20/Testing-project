@@ -9,5 +9,5 @@ Feature: Internships
 
     Examples:
         | String | number |
-        | Teralytics | 2 |
-        |  | 0 |
+        | Teralytics | 24 |
+        |  | 24 |
