@@ -2,12 +2,12 @@ Feature: Internships
     Manages Internships information.
 
     Scenario Outline: Gets the list of internships
-        Given a string <string>
+        Given a String <String>
         When I send a GET request to fetch internships
         Then I should get <number> of internships
 
 
     Examples:
-        | string | number |
-        | Teralytics | 2 |
-        |  | 30 |
+        | String     | number |
+        | Teralytics | 2      |
+        |            | 24     |

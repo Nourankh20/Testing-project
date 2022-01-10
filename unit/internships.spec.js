@@ -1,15 +1,38 @@
 const mockInternshipsApiStub = require("./internships.api.stub.json");
 const { getInternships } = require("../scrap");
-const { mongoClient } = require('../db.js');
+// const { mongoClient } = require('../db.js');
 const {MongoClient} = require('mongodb');
 
 beforeEach(() => {
   jest.clearAllMocks();
   jest.resetAllMocks();
+  jest.setTimeout(10000);
+
 });
 
 describe("Test Internships API", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+    jest.resetAllMocks();
+    jest.setTimeout(10000);
+  
+  });
+  test("Test Get Internships", async () => {
+    jest.setTimeout(10000);
 
+    const results = await getInternships("Teralytics");
+    expect(results).toEqual(mockInternshipsApiStub);
+  });
+
+});
+
+describe("Testing data Aggregation",()=>{
+
+  beforeEach(() => {
+    jest.clearAllMocks();
+    jest.resetAllMocks();
+  
+  });
   let connection;
   let db;
 
@@ -21,7 +44,9 @@ describe("Test Internships API", () => {
   });
 
   
-  test('should insert a doc into collection', async () => {
+  test('should insert a doc into collection', async () => {   
+     jest.setTimeout(10000);
+
     const glassdoor = db.collection('glassdoor');
 
     const mockInternship =  await getInternships("Teralytics");
@@ -35,20 +60,4 @@ describe("Test Internships API", () => {
     await connection.close();
     // await db.close();
   });
-
-  test("Test Get Internships", async () => {
-    const results = await getInternships("Teralytics");
-    expect(results).toEqual(mockInternshipsApiStub);
-  });
-
-  // test("Test data aggregate get method", async () => {
-  //   const connectSpy = jest.spyOn(mongoClient, 'connect').mockReturnValueOnce({});
-  //     const actual = await Common.connect('mongodb://localhost:27017');
-  //     expect(actual).toEqual({});
-  //     expect(connectSpy).toBeCalledWith('mongodb://localhost:27017', {
-  //       useNewUrlParser: true,
-  //       useUnifiedTopology: true 
-  // });
-// });
-
-});
+})

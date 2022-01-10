@@ -1,0 +1,115 @@
+[
+  {
+    "description": "    Manages Internships information.",
+    "elements": [
+      {
+        "description": "",
+        "id": "internships;gets-the-list-of-internships",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of internships",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a String Teralytics",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8842800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch internships",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 34557599,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 2 of internships",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "internships;gets-the-list-of-internships",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Gets the list of internships",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "a String ",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10241699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I send a GET request to fetch internships",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 24354500,
+              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should get 24 of internships",
+            "match": {
+              "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "internships",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Internships",
+    "tags": [],
+    "uri": "e2e\\features\\internships.feature"
+  }
+]
