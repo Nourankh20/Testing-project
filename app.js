@@ -4,6 +4,8 @@ const { mongoClient } = require("./db.js");
 
 const bodyParser = require("body-parser");
 const { getInternships } = require("./scrap");
+const {getCompJobs } = require("./scrap1");
+const {getJobType } = require("./scrap2");
 app.use(bodyParser.json());
 
 app.use(function (req, res, next) {
@@ -33,6 +35,20 @@ app.listen(3000, async (req, res) => {
 			});
 		})
 	);
+
+
+	app.get("/companies", async (req, res) => {
+		getCompJobs(req.query.string).then((companies) => {
+		  return res.status(200).json(companies);
+		});
+	  });
+	
+	  app.get("/jobsType", async (req, res) => {
+		getJobType(req.query.string).then((jobType) => {
+		  return res.status(200).json(jobType);
+		});
+	  });
+	
 	//   ,
 
 	//   app.get("/internships", async (req, res) => {
