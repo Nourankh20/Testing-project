@@ -30,7 +30,7 @@ const getInternships = (companyName) => {
             internship =internship.toString().split(" ")[0, internship.length-1];
             
         }
-        // console.log(parsedInternships)
+        console.log(output)
         return  output;    
 
       })

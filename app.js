@@ -16,11 +16,11 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.listen(3000, async (req, res) => {
-  console.log(`Server listening on Port ${3000}`);
+app.listen(8000, async (req, res) => {
+  console.log(`Server listening on Port ${8000}`);
 
   app.get("/internships", async (req, res) => {
-    getInternships(req.query.char).then((internships) => {
+    getInternships(req.query.string).then((internships) => {
       return res.status(200).json(internships);
     });
   }

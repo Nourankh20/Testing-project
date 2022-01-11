@@ -13,13 +13,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a String Teralytics",
+            "name": "a string Teralytics",
             "match": {
               "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 11065299
+              "duration": 11970600
             }
           },
           {
@@ -32,8 +32,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 47542400,
-              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
+              "duration": 7046299,
+              "error_message": "ReferenceError: Teralytics is not defined\n    at CustomWorld.<anonymous> (C:\\Users\\noura\\Dropbox\\My PC (Nouran)\\Documents\\GitHub\\Testing-project\\e2e\\steps\\internships.js:13:49)"
             }
           },
           {
@@ -64,13 +64,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "a String ",
+            "name": "a string google",
             "match": {
               "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
             },
             "result": {
               "status": "passed",
-              "duration": 13543999
+              "duration": 12165000
             }
           },
           {
@@ -83,15 +83,15 @@
             },
             "result": {
               "status": "failed",
-              "duration": 41720700,
-              "error_message": "Error: connect ECONNREFUSED 127.0.0.1:3000\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1161:16)"
+              "duration": 9884999,
+              "error_message": "ReferenceError: Teralytics is not defined\n    at CustomWorld.<anonymous> (C:\\Users\\noura\\Dropbox\\My PC (Nouran)\\Documents\\GitHub\\Testing-project\\e2e\\steps\\internships.js:13:49)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should get 24 of internships",
+            "name": "I should get 1 of internships",
             "match": {
               "location": "..\\..\\..\\..\\My PC Nouran\\Documents\\GitHub\\Testing-project\\node_modules\\@cucumber\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:16"
             },
